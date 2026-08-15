@@ -1,4 +1,4 @@
-const CACHE_NAME = 'marketing-notes-v6';
+const CACHE_NAME = 'marketing-v1';
 const FILES_TO_CACHE = [
   './',
   './index.html',
