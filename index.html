@@ -464,6 +464,87 @@
       display: inline-block;
     }
 
+    .model-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 6px 0 4px;
+    }
+
+    .model-row {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+    }
+
+    .model-box {
+      flex: 1;
+      background: var(--paper);
+      border: 1.5px solid var(--maroon);
+      border-radius: 10px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+
+    .model-box.wide {
+      flex: none;
+      width: 100%;
+    }
+
+    .model-box .mb-title {
+      font-weight: 700;
+      color: var(--maroon-dark);
+      font-size: 0.88rem;
+      margin-bottom: 4px;
+    }
+
+    .model-box .mb-sub {
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    .model-box.blackbox {
+      background: #efe4dc;
+      border-color: var(--gold);
+    }
+
+    .model-box.response {
+      background: #eef3ee;
+      border-color: var(--green);
+    }
+
+    .model-arrow-down {
+      display: flex;
+      justify-content: center;
+      color: var(--maroon);
+      font-size: 1.3rem;
+      line-height: 1;
+      margin: 2px 0;
+      font-weight: 700;
+    }
+
+    .model-arrow-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--maroon);
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding: 0 2px;
+    }
+
+    @media (max-width: 640px) {
+      .model-row {
+        flex-direction: column;
+      }
+
+      .model-arrow-right {
+        transform: rotate(90deg);
+        padding: 2px 0;
+      }
+    }
+
     .points-list {
       list-style: none;
       margin: 0;
@@ -771,7 +852,7 @@
   <div class="layout">
 
     <details class="toc-wrap" open>
-      <summary>📑 সূচিপত্র — সবগুলো প্রশ্ন এক নজরে (Chapter 1-10 — 71টি)</summary>
+      <summary>📑 সূচিপত্র — সবগুলো প্রশ্ন এক নজরে (Chapter 1-10 — 72টি)</summary>
       <div class="toc-grid">
         <a href="#q-0" class="toc-item" data-target="q-0" data-chapter="1"><span class="toc-text">Marketing 1.1:
             বাজারজাতকরণের সংজ্ঞা দাও।</span></a>
@@ -818,6 +899,8 @@
             উপাদান কী, যেগুলো ভোক্তা আচরণকে প্রভাবিত করে? প্রতিটি সংক্ষেপে ব্যাখ্যা কর।</span></a>
         <a href="#q-22" class="toc-item" data-target="q-22" data-chapter="3"><span class="toc-text">Marketing 3.7: ক্রয়
             সিদ্ধান্ত আচরণের ধরনসমূহ আলোচনা কর।</span></a>
+        <a href="#q-72" class="toc-item" data-target="q-72" data-chapter="3"><span class="toc-text">Business 3.7:
+            উদাহরণসহ ক্রেতার ক্রয় সিদ্ধান্তগ্রহণ প্রক্রিয়ার ধাপগুলো আলোচনা কর।</span></a>
         <a href="#q-23" class="toc-item" data-target="q-23" data-chapter="3"><span class="toc-text">Marketing 3.10:
             ভোক্তার সর্বজনস্বীকৃত অধিকারগুলো উল্লেখ কর।</span></a>
         <a href="#q-24" class="toc-item" data-target="q-24" data-chapter="3"><span class="toc-text">Marketing 3.12:
@@ -2395,6 +2478,32 @@
         </div>
       </div>
     </details>
+    <details class="qcard" id="q-72" data-chapter="3">
+      <summary class="qsummary">
+        <span class="qtext">Business 3.7: উদাহরণসহ ক্রেতার ক্রয় সিদ্ধান্তগ্রহণ প্রক্রিয়ার ধাপগুলো আলোচনা কর।</span>
+        <span class="chev">▼</span>
+      </summary>
+      <div class="qbody">
+        <div class="intro-box">
+          <div class="sec-label">ভূমিকা</div>
+          <p>ক্রেতা কোনো পণ্য কেনার আগে একটি নির্দিষ্ট চিন্তাপ্রক্রিয়ার মধ্য দিয়ে যায়, যাকে ক্রয় সিদ্ধান্তগ্রহণ প্রক্রিয়া বলা হয়। এই প্রক্রিয়া বোঝা প্রতিষ্ঠানের জন্য গুরুত্বপূর্ণ, কারণ এর প্রতিটি ধাপে ভোক্তার আচরণ প্রভাবিত করার সুযোগ থাকে। সাধারণত এই প্রক্রিয়া পাঁচটি ধারাবাহিক ধাপে সম্পন্ন হয়।</p>
+        </div>
+        <div class="sub-section">
+          <h3 class="sub-title">মূল আলোচনা: ক্রয় সিদ্ধান্তগ্রহণ প্রক্রিয়ার ধাপ</h3>
+          <ol class="points-list">
+            <li class="point"><b>১. প্রয়োজন অনুভবকরণ (Need Recognition)</b> ক্রয় প্রক্রিয়ার প্রথম ধাপে ক্রেতা কোনো একটি অভাব বা সমস্যা অনুভব করে, যা তার বর্তমান অবস্থা ও কাঙ্ক্ষিত অবস্থার মধ্যে পার্থক্য থেকে জন্ম নেয়। যেমন, পুরনো মোবাইল ফোনটি ধীরগতির হয়ে যাওয়ায় একজন ক্রেতা নতুন ফোনের প্রয়োজন অনুভব করে।</li>
+            <li class="point"><b>২. তথ্য অনুসন্ধান (Information Search)</b> প্রয়োজন অনুভব করার পর ক্রেতা সেই প্রয়োজন পূরণের জন্য বিভিন্ন উৎস থেকে তথ্য সংগ্রহ করে, যেমন বন্ধুবান্ধব, বিজ্ঞাপন, বিক্রয়কর্মী বা অনলাইন রিভিউ। যেমন, ফোন কেনার আগে ক্রেতা ইউটিউব রিভিউ ও দোকানে খোঁজ নিয়ে বিভিন্ন মডেল সম্পর্কে জানে।</li>
+            <li class="point"><b>৩. বিকল্প মূল্যায়ন (Evaluation of Alternatives)</b> সংগৃহীত তথ্যের ভিত্তিতে ক্রেতা প্রাপ্ত বিভিন্ন ব্র্যান্ড বা পণ্যকে দাম, মান, বৈশিষ্ট্য ইত্যাদি মানদণ্ডে তুলনা করে সেরা বিকল্প খুঁজে বের করার চেষ্টা করে। যেমন, ক্রেতা দুটি ফোন ব্র্যান্ডের ক্যামেরা, ব্যাটারি ও দাম তুলনা করে দেখে কোনটি তার প্রয়োজনের সাথে বেশি মানানসই।</li>
+            <li class="point"><b>৪. ক্রয় সিদ্ধান্ত (Purchase Decision)</b> মূল্যায়নের পর ক্রেতা সবচেয়ে উপযুক্ত পণ্যটি কেনার চূড়ান্ত সিদ্ধান্ত নেয়, তবে এই পর্যায়ে পরিবারের মতামত বা অপ্রত্যাশিত পরিস্থিতির কারণে সিদ্ধান্ত পরিবর্তিতও হতে পারে। যেমন, ক্রেতা নির্দিষ্ট একটি ব্র্যান্ডের ফোন কেনার সিদ্ধান্ত নিলেও বাজেট কমে যাওয়ায় শেষ মুহূর্তে সস্তা মডেল কিনতে পারে।</li>
+            <li class="point"><b>৫. ক্রয়োত্তর আচরণ (Post-Purchase Behavior)</b> পণ্য কেনার পর ক্রেতা তার সিদ্ধান্তে সন্তুষ্ট নাকি অসন্তুষ্ট তা অনুভব করে, যা পণ্যের প্রকৃত কার্যকারিতা প্রত্যাশার সাথে মিলিয়ে নির্ধারিত হয়। যেমন, ফোনটি প্রত্যাশামতো পারফরম্যান্স দিলে ক্রেতা সন্তুষ্ট হয় ও পুনরায় একই ব্র্যান্ড থেকে কেনার সম্ভাবনা বাড়ে।</li>
+          </ol>
+        </div>
+        <div class="conclusion-box">
+          <div class="sec-label">উপসংহার</div>
+          <p>ক্রেতার ক্রয় সিদ্ধান্তগ্রহণ প্রক্রিয়া প্রয়োজন অনুভবকরণ থেকে শুরু করে ক্রয়োত্তর আচরণ পর্যন্ত পাঁচটি ধারাবাহিক ধাপে সম্পন্ন হয়। প্রতিষ্ঠান এই প্রতিটি ধাপে সঠিকভাবে ক্রেতাকে প্রভাবিত করতে পারলে বিক্রয় ও গ্রাহক সন্তুষ্টি উভয়ই বাড়াতে পারে।</p>
+        </div>
+      </div>
+    </details>
     <details class="qcard" id="q-23" data-chapter="3">
       <summary class="qsummary">
         <span class="qtext">Marketing 3.10: ভোক্তার সর্বজনস্বীকৃত অধিকারগুলো উল্লেখ কর।</span>
@@ -2493,9 +2602,33 @@
         </div>
         <div class="sub-section">
           <h3 class="sub-title">মডেলের সরল কাঠামো</h3>
-          <p>বাজারজাতকরণ উদ্দীপনা + অন্যান্য উদ্দীপনা → ভোক্তার মনস্তাত্ত্বিক প্রক্রিয়া (ব্ল্যাক বক্স) → ক্রয়
-            সিদ্ধান্ত প্রক্রিয়া → ভোক্তার প্রতিক্রিয়া (চূড়ান্ত ক্রয় সিদ্ধান্ত)</p>
-
+          <div class="model-flow">
+            <div class="model-row">
+              <div class="model-box">
+                <div class="mb-title">বাজারজাতকরণ উদ্দীপনা</div>
+                <div class="mb-sub">পণ্য, মূল্য, স্থান, প্রচারণা</div>
+              </div>
+              <div class="model-box">
+                <div class="mb-title">অন্যান্য উদ্দীপনা</div>
+                <div class="mb-sub">অর্থনৈতিক, প্রযুক্তিগত, রাজনৈতিক, সাংস্কৃতিক</div>
+              </div>
+            </div>
+            <div class="model-arrow-down">↓</div>
+            <div class="model-box blackbox wide">
+              <div class="mb-title">ভোক্তার মনস্তাত্ত্বিক প্রক্রিয়া</div>
+              <div class="mb-sub">ব্যক্তিগত বৈশিষ্ট্য + মনস্তাত্ত্বিক প্রক্রিয়া (প্রেষণা, উপলব্ধি, শিক্ষা, স্মৃতি)</div>
+            </div>
+            <div class="model-arrow-down">↓</div>
+            <div class="model-box wide">
+              <div class="mb-title">ক্রয় সিদ্ধান্ত প্রক্রিয়া</div>
+              <div class="mb-sub">সমস্যা চিহ্নিতকরণ → তথ্য সংগ্রহ → বিকল্প মূল্যায়ন → ক্রয় সিদ্ধান্ত → ক্রয়োত্তর আচরণ</div>
+            </div>
+            <div class="model-arrow-down">↓</div>
+            <div class="model-box response wide">
+              <div class="mb-title">ভোক্তার প্রতিক্রিয়া (চূড়ান্ত ক্রয় সিদ্ধান্ত)</div>
+              <div class="mb-sub">পণ্য নির্বাচন · ব্র্যান্ড নির্বাচন · বিক্রেতা নির্বাচন · সময় ও পরিমাণ নির্ধারণ</div>
+            </div>
+          </div>
         </div>
         <div class="conclusion-box">
           <div class="sec-label">উপসংহার</div>
