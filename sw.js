@@ -1,4 +1,4 @@
-const CACHE_NAME = 'marketing-v5';
+const CACHE_NAME = 'marketing-v9';
 const FILES_TO_CACHE = [
   './',
   './index.html',
